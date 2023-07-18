@@ -203,6 +203,20 @@
     }
 }
 
+@media screen and (max-width: 350px) {
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    #navbar__logo {
+        font-size: 1.7rem;
+    }
+}
+
 
 /* Hero Section CSS */
 .main {
