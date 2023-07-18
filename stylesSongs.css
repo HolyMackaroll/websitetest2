@@ -107,7 +107,6 @@
     transition: 0.3s ease-in-out;
 }
 
-
 @media screen and (max-width: 960px) {
     .navbar__container {
         display: flex;
@@ -207,17 +206,35 @@
 
 /* Hero Section CSS */
 .main {
-    background-color: #011936;
+    background: #141414;
     background-size: cover;
     background-repeat: no-repeat;
 
-    min-height: 100vh;
+    min-height: 10vh;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -200px;
+    margin-top: -150px;
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main__content iframe:hover {
+    transform: scale(1.025);
+    transition: 0.3s ease-in-out;
+}
+
+.main__content iframe:not(:hover) {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
 }
 
 .main__container {
@@ -225,14 +242,23 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
-    margin: 0 auto;
-    height: 90vh;
+    height: 80vh;
     /* background-color: #141414; */
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
-    margin-top: -200px;
+}
+
+.main__content h1 {
+    font-size: 3.5rem;
+    background-image: linear-gradient(to top, #fffdd0 0%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-right: -100%;
 }
 
 .main__content h2 {
@@ -243,6 +269,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-bottom: 10px;
 }
 
 .main__content p {
@@ -266,6 +293,10 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
+    .main {
+        margin-top: -250px;
+    }
+    
     .main__container {
         display: grid;
         grid-template-columns: auto;
@@ -273,12 +304,17 @@
         justify-self: center;
         width: 100%;
         margin: 0 auto 600px auto;
-        height: 90vh;
+        height: 10vh;
     }
 
     .main__content {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+
+    .main__content h1 {
+        margin-right: -5%;
+        margin-left: -5%;
     }
 
     .main__content h2 {
@@ -310,7 +346,6 @@
 
 /* Hero Section CSS SECTION 2*/
 .mainTwo {
-    background-color: #141414;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -320,7 +355,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -200px;
+    margin-bottom: 0px;
+    margin-top: -150px;
+}
+
+.mainTwo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: -100px;
 }
 
 .main__containerTwo {
@@ -328,14 +373,26 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
-    margin: 0 auto;
+    margin: -100 auto;
     height: 90vh;
     /* background-color: #141414; */
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
-    margin-top: -200px;
+}
+
+.main__contentTwo h1 {
+    font-size: 3.5rem;
+    background-image: linear-gradient(to top, #fffdd0 0%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 1px;
+    margin-left: 105%;
+    margin-right: -108%;
 }
 
 .main__contentTwo h2 {
@@ -349,6 +406,22 @@
     left: 40rem;
     margin-right: -105%;
     margin-left: 105%;
+    margin-bottom: 10px;
+}
+
+.main__contentTwo iframe {
+    position: relative;
+    left: 105%;
+}
+
+.main__contentTwo iframe:hover {
+    transform: scale(1.025);
+    transition: 0.3s ease-in-out;
+}
+
+.main__contentTwo iframe:not(:hover) {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
 }
 
 .main__contentTwo p {
@@ -380,7 +453,7 @@
         justify-self: center;
         width: 100%;
         margin: 0 auto;
-        height: 90vh;
+        height: 70vh;
         margin: 0 auto 600px auto;
     }
 
@@ -389,10 +462,20 @@
         margin-bottom: 4rem;
     }
 
+    .main__contentTwo h1 {
+        margin-top: 45%;
+        margin-right: -5%;
+        margin-left: -5%;
+    }
+
     .main__contentTwo h2 {
         font-size: 3rem;
         margin-right: -5%;
         margin-left: -5%;
+    }
+
+    .main__contentTwo iframe {
+        left: 0%;
     }
 
     .main__contentTwo p {
@@ -496,7 +579,6 @@
     transform: scale(1.075);
     transition: 0.2s ease-in;
 }
-
 
 @media screen and (max-width: 960px) {
     .services {
