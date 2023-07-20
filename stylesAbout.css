@@ -54,7 +54,7 @@
     box-shadow: 15px 25px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile Responsive */
+/* Main  Responsive Section */
 @media screen and (max-width: 768px) {
     .main__container {
         display: grid;
@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 480px) {
     .main {
-        height: 175vh;
+        height: 190vh;
     }
 
     .main__content h2 {
@@ -162,7 +162,7 @@
     box-shadow: -15px 25px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile Responsive */
+/* Main Duplicate Responsive Section */
 @media screen and (max-width: 768px) {
     .main__container__two {
         display: grid;
@@ -201,7 +201,7 @@
 
 @media screen and (max-width: 480px) {
     .main__two {
-        height: 170vh;
+        height: 190vh;
     }
     
     .main__content__two h2 {
