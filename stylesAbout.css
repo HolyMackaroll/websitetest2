@@ -89,7 +89,7 @@
 
     .main__content h2 {
         font-size: 2rem;
-        margin-top: -10%;
+        margin-top: -20%;
     }
 
     .main__content p {
@@ -206,12 +206,15 @@
     
     .main__content__two h2 {
         font-size: 2rem;
-        margin-top: 10%;
+        margin-top: 0%;
     }
 
     .main__contenr__two p {
         margin-top: 2rem;
         font-size: 1.5rem;
+    }
+    #main__img__two {
+        margin-top: -10%;
     }
 }
 
