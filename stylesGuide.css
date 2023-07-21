@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -200px;
+    margin-bottom: -125px;
 }
 
 .main__container {
@@ -76,7 +76,7 @@
         align-items: center;
         justify-self: center;
         width: 100%;
-        margin: 0 auto 600px auto;
+        margin: 0 auto 6000px auto;
         height: 90vh;
     }
 
